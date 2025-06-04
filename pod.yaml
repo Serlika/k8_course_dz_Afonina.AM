@@ -7,7 +7,7 @@ spec:
   volumes:
     - name: shared-volume
       emptyDir: {}
-      
+
   initContainers:
     - name: init-container
       image: busybox
@@ -15,7 +15,7 @@ spec:
       volumeMounts:
         - name: shared-volume
           mountPath: /init
-          
+
   containers:
     - name: web-server
       image: python:alpine
