@@ -27,7 +27,7 @@ spec:
       initContainers:
         - name: init-container
           image: busybox
-          command: ['sh', '-c', 'echo "<html><body><h1>Domashnee zadanie 2.</h1></body></html>" > /init/index.html']
+          command: ['sh', '-c', 'echo "<html><body><h1>Domashnee zadanie 3.</h1></body></html>" > /init/index.html']
           volumeMounts:
             - name: shared-volume
               mountPath: /init
